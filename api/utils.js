@@ -9,6 +9,4 @@ function requireUser(req, res, next) {
     next();
   }
   
-  module.exports = {
-    requireUser
-  }
+  module.exports = { requireUser }

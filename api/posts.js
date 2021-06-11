@@ -3,6 +3,13 @@ const postsRouter = express.Router();
 
 const { requireUser } = require('./utils');
 
+const { 
+  createPost,
+  getAllPosts,
+  updatePost,
+  getPostById,
+} = require('../db');
+
 postsRouter.get('/', async (req, res) => {
     try {
       const allPosts = await getAllPosts();
