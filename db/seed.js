@@ -7,6 +7,7 @@ const {
   createPost,
   updatePost,
   getAllPosts,
+  createTags,
   getAllTags,
   getPostsByTagName
 } = require('./index');
@@ -160,7 +161,6 @@ async function createInitialTags() {
 async function rebuildDB() {
   try {
     client.connect();
-
     await dropTables();
     await createTables();
     await createInitialUsers();
