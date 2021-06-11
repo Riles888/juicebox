@@ -1,5 +1,5 @@
 const express = require('express');
-const postsRouter = express.Router();
+const tagsRouter = express.Router();
 
 const { 
   getAllTags,
